@@ -4,10 +4,10 @@ import Image from "next/image";
 export default function Resume() {
   return (
     <div className="container mx-auto p-4">
-      <article data-page="resume">
         <header>
-          <h2 className="text-3xl font-bold">Resume</h2>
+          <h2 className="h2 article-title">Resume</h2>
         </header>
+      <article data-page="resume">
         <br />
         <br />
 
