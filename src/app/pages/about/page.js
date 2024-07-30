@@ -1,8 +1,12 @@
 "use client"
 import Link from "next/link";
 import icondev from "../../../image/icon-dev.png";
-import iconapp from "../../../image/icon-app.png";
+// import iconapp from "../../../image/icon-app.png";
 import Image from "next/image";
+import { AiOutlineAntDesign } from "react-icons/ai";
+import { MdDeveloperMode } from "react-icons/md";
+import { FaAppStoreIos } from "react-icons/fa6";
+import { TbAppsFilled } from "react-icons/tb";
 
 export default function About() {
   return (
@@ -41,13 +45,14 @@ export default function About() {
             <div className="row flex flex-wrap gap-4">
               <div className="col-lg-6 service-item flex-1 min-w-[300px]">
                 <div className="flex gap-3 service-content-box p-4 border rounded-lg shadow-lg">
-                  <Image src={icondev} alt="design icon" width={40} height={20} />
+            
+                  <FaAppStoreIos className="fs"/>
                   <p className="service-item-text text-lg">App Development<br/>Professional development of applications.</p>
                 </div>
               </div>
               <div className="col-lg-6 service-item flex-1 min-w-[300px]">
                 <div className="flex gap-3 service-content-box p-4 border rounded-lg shadow-lg">
-                  <Image src={icondev} alt="design icon" width={40} height={20} />
+                  <MdDeveloperMode className="fs" />
                   <p className="service-item-text text-lg">Web Development<br/>High-quality development of sites at the professional level.</p>
                 </div>
               </div>
@@ -57,13 +62,13 @@ export default function About() {
             <div className="row flex flex-wrap gap-4">
               <div className="col-lg-6 service-item flex-1 min-w-[300px]">
                 <div className="flex gap-3 service-content-box p-4 border rounded-lg shadow-lg">
-                  <Image src={icondev} alt="design icon" width={40} height={20} />
+                <AiOutlineAntDesign className="fs" />
                   <p className="service-item-text text-lg">Web Design<br/>The most modern and high-quality design.</p>
                 </div>
               </div>
               <div className="col-lg-6 service-item flex-1 min-w-[300px]">
                 <div className="flex gap-3 service-content-box p-4 border rounded-lg shadow-lg">
-                  <Image src={icondev} alt="design icon" width={40} height={20} />
+                  <TbAppsFilled className="fs"/>
                   <p className="service-item-text text-lg">Photography<br/>I make high-quality photos in any category professionally.</p>
                 </div>
               </div>
