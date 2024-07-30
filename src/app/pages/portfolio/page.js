@@ -65,7 +65,7 @@ export default function Portfolio() {
         {activeTab === 1 && 
         
         <div className="container mt-4 mb-2">
-        <div className='row flex gap-4'>  
+        <div className='row flex gap-4 blocks'>  
             <div  className=" col-lg-4 project-item active" data-filter-item="" data-category="application">
               <a href="https://codecanyon.net/item/combers-saloon-appointment-booking-react-native-app/35566415" target="_blank">
         
@@ -122,7 +122,7 @@ export default function Portfolio() {
               </a>
             </div>
             </div>
-            <div className='row flex gap-4 mt-5 mb-2'>
+            <div className='row flex gap-4 mt-5 mb-2 blocks'>
     <div className="col-lg-4 project-item active" data-filter-item="" data-category="startups">
       <a href="#" target="_blank">
 
@@ -203,7 +203,7 @@ export default function Portfolio() {
         }
         {activeTab === 2 && 
         <div className='container'>
-   <div className='row flex gap-4 mt-5 mb-2'>
+   <div className='row flex gap-4 mt-5 mb-2 blocks'>
     <div className="col-lg-4 project-item active" data-filter-item="" data-category="web development">
       <a href="#" target="_blank">
 
@@ -279,7 +279,7 @@ export default function Portfolio() {
       </a>
     </div>
     </div>
-    <div className='row flex gap-4 mt-5 mb-2'>
+    <div className='row flex gap-4 mt-5 mb-2 blocks'>
     <div className="project-item active" data-filter-item="" data-category="startups">
       <a href="https://www.whalesbook.com/" target="_blank">
 
@@ -368,7 +368,7 @@ export default function Portfolio() {
  
       {activeTab === 0 && 
   <div className="container mt-5 mb-2">
-<div className='row flex gap-4'>  
+<div className='row flex gap-4 blocks'>  
     <div  className=" col-lg-4 project-item active" data-filter-item="" data-category="application">
       <a href="https://codecanyon.net/item/combers-saloon-appointment-booking-react-native-app/35566415" target="_blank">
 
@@ -425,7 +425,7 @@ export default function Portfolio() {
       </a>
     </div>
     </div>
-    <div className='row flex gap-4 mt-5 mb-2'>
+    <div className='row flex gap-4 mt-5 mb-2 blocks'>
     <div className="col-lg-4 project-item active" data-filter-item="" data-category="application">
       <a href="#" target="_blank">
 
@@ -506,7 +506,7 @@ export default function Portfolio() {
       </a>
     </div>
     </div>
-    <div className='row flex gap-4 mt-5 mb-2'>
+    <div className='row flex gap-4 mt-5 mb-2 blocks '>
     <div className="col-lg-4 project-item active" data-filter-item="" data-category="web development">
       <a href="#" target="_blank">
 
@@ -582,7 +582,7 @@ export default function Portfolio() {
       </a>
     </div>
     </div>
-    <div className='row flex gap-4 mt-5 mb-2'>
+    <div className='row flex gap-4 mt-5 mb-2 blocks'>
     <div className="project-item active" data-filter-item="" data-category="startups">
       <a href="https://www.whalesbook.com/" target="_blank">
 
@@ -663,7 +663,7 @@ export default function Portfolio() {
       </a>
     </div>
     </div>
-    <div className='row flex gap-4 mt-5 mb-2'>
+    <div className='row flex gap-4 mt-5 mb-2 blocks'>
     <div className="col-lg-4 project-item active" data-filter-item="" data-category="startups">
       <a href="#" target="_blank">
 
