@@ -79,7 +79,7 @@ export default function Contact() {
                                 <h3 className="mb-2 text-lg font-medium leading-6 text-white">Working
                                     hours</h3>
                                 <p className=" text-white">Monday - Friday: 9:30 - 6:30</p>
-                                {/* <p className=" text-white">Saturday &amp; Sunday: 08:00 - 12:00</p> */}
+                              
                             </div>
                         </li>
                     </ul>

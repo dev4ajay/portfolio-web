@@ -1,11 +1,12 @@
 "use client"
-import React  ,{useState} from 'react'
-import Link from 'next/link'
-const page = () => {
+import React, { useState } from 'react';
+import Link from 'next/link';
+
+const Page = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <nav className="bg-dark border-dark-200">
+      <nav className="bg-darks border-dark-200">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
             {/* Add logo or brand name here */}
@@ -22,25 +23,25 @@ const page = () => {
             </svg>
           </button>
           <div className={`${isOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`} id="navbar-default">
-            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-dark md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 text-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-darks md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 text-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
-                <Link href="/pages/about" className="block py-2 px-3 text-darks  rounded  md:border-0 md:hover:text-blue-700 md:p-0   text-white md:dark:hover:bg-transparent">
+                <Link href="/pages/about" className="block py-2 px-3 text-darks rounded md:border-0 md:hover:text-blue-700 md:p-0 text-white md:dark:hover:bg-transparent">
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/pages/resume"
-                   className="block py-2 px-3 text-darks  rounded  md:border-0 md:hover:text-blue-700 md:p-0   text-white md:dark:hover:bg-transparent">Resume
+                <Link href="/pages/resume" className="block py-2 px-3 text-darks rounded md:border-0 md:hover:text-blue-700 md:p-0 text-white md:dark:hover:bg-transparent">
+                  Resume
                 </Link>
               </li>
               <li>
-                <Link href="/pages/portfolio"
-                  className="block py-2 px-3 text-darks  rounded  md:border-0 md:hover:text-blue-700 md:p-0   text-white md:dark:hover:bg-transparent">Portfolio
+                <Link href="/pages/portfolio" className="block py-2 px-3 text-darks rounded md:border-0 md:hover:text-blue-700 md:p-0 text-white md:dark:hover:bg-transparent">
+                  Portfolio
                 </Link>
               </li>
               <li>
-                <Link href="/pages/contact"
-                  className="block py-2 px-3 text-darks  rounded  md:border-0 md:hover:text-blue-700 md:p-0   text-white md:dark:hover:bg-transparent">Contact
+                <Link href="/pages/contact" className="block py-2 px-3 text-darks rounded md:border-0 md:hover:text-blue-700 md:p-0 text-white md:dark:hover:bg-transparent">
+                  Contact
                 </Link>
               </li>
             </ul>
@@ -48,7 +49,7 @@ const page = () => {
         </div>
       </nav>
     </div>
-  )
+  );
 }
 
-export default page
+export default Page;

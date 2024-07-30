@@ -49,7 +49,7 @@ export default function Resume() {
             <li className="timeline-item mb-6">
               <h4 className=" font-semibold">Prometheus Technologies Pvt. Ltd (Junior React JS Developer)</h4>
               <span className="record">Feb 2023 — May 2024</span>
-              <p className="text-lg">I worked for about 10 months and signed a bond, but the company didn't have any projects, so they had to lay me off.</p>
+              <p className="text-lg">I worked for about 10 months and signed a bond, but the company didn&apos;t have any projects, so they had to lay me off.</p>
             </li>
             <li className="timeline-item mb-6">
               <h4 className=" font-semibold">Zidio Development Pvt. Ltd (React JS Developer, Internship)</h4>

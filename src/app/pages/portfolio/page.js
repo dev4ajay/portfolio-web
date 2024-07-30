@@ -31,7 +31,7 @@ export default function Portfolio() {
     return (
       <div className="container">
 
-<article className="portfolio active" data-page="portfolio">
+<article className="container portfolio active" data-page="portfolio">
 
 <header>
   <h2 className="h2 article-title">Portfolio</h2>

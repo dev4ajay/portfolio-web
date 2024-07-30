@@ -14,8 +14,8 @@ export default function About() {
         <br/>
         <section className="about-text">
           <p className="text-lg">
-            Hey there! 👋 I've spent over 1 year diving deep into React JS development, focusing on
-            creating awesome websites and mobile apps. 📱 I've had the pleasure of working on a variety of projects for different clients, from cool startups,
+            Hey there! 👋 I&apos;ve spent over 1 year diving deep into React JS development, focusing on
+            creating awesome websites and mobile apps. 📱 I&apos;ve had the pleasure of working on a variety of projects for different clients, from cool startups,
             small and mid-level companies.
           </p>
           <br/>
@@ -28,14 +28,14 @@ export default function About() {
           <br/>
           <p className="text-lg">
             🎨 My portfolio shows my passion for crafting top-notch work that goes beyond expectations. |
-            🚀 I'm known for hitting deadlines and sticking to budgets, and I thrive in teams where we can tackle
-            challenges and make something amazing together. Let's create something awesome! 💪
+            🚀 I&apos;m known for hitting deadlines and sticking to budgets, and I thrive in teams where we can tackle
+            challenges and make something amazing together. Let&apos;s create something awesome! 💪
           </p>
           <br/>
           <br/>
         </section>
         <section className="service">
-          <h3 className="h3 service-title text-2xl font-semibold">What I'm doing</h3>
+          <h3 className="h3 service-title text-2xl font-semibold">What I&apos;m doing</h3>
           <br/>
           <div className="container">
             <div className="row flex flex-wrap gap-4">
