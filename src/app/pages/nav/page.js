@@ -1,9 +1,12 @@
 "use client"
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation'
 
 const Page = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname()
+
   return (
     <div>
       <nav className="bg-darks border-dark-200">
@@ -23,24 +26,24 @@ const Page = () => {
             </svg>
           </button>
           <div className={`${isOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`} id="navbar-default">
-            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-darks md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 text-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-darks md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 text-white  ">
               <li>
-                <Link href="/pages/about" className="block py-2 px-3 text-darks rounded md:border-0 md:hover:text-blue-700 md:p-0 text-white md:dark:hover:bg-transparent">
+                <Link href="/pages/about" className={`inline-flex rounded-full px-3 py-1.5 bg-orange-950 hover:text-blue-500 [&.active]:bg-sky-600 [&.active]:bg-sky-600 ${pathname === '/pages/about' ? 'active' : ''}`}>
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/pages/resume" className="block py-2 px-3 text-darks rounded md:border-0 md:hover:text-blue-700 md:p-0 text-white md:dark:hover:bg-transparent">
+                <Link href="/pages/resume" className={`inline-flex rounded-full px-3 py-1.5 bg-orange-950 hover:text-blue-500 [&.active]:bg-sky-600 [&.active]:bg-sky-600 ${pathname === '/pages/resume' ? 'active' : ''}`}>
                   Resume
                 </Link>
               </li>
               <li>
-                <Link href="/pages/portfolio" className="block py-2 px-3 text-darks rounded md:border-0 md:hover:text-blue-700 md:p-0 text-white md:dark:hover:bg-transparent">
+                <Link href="/pages/portfolio" className={`inline-flex rounded-full px-3 py-1.5 bg-orange-950 hover:text-blue-500 [&.active]:bg-sky-600 [&.active]:bg-sky-600 ${pathname === '/pages/portfolio' ? 'active' : ''}`}>
                   Portfolio
                 </Link>
               </li>
               <li>
-                <Link href="/pages/contact" className="block py-2 px-3 text-darks rounded md:border-0 md:hover:text-blue-700 md:p-0 text-white md:dark:hover:bg-transparent">
+                <Link href="/pages/contact" className={`inline-flex rounded-full px-3 py-1.5 bg-orange-950 hover:text-blue-500 [&.active]:bg-sky-600 [&.active]:bg-sky-600 ${pathname === '/pages/contact' ? 'active' : ''}`}>
                   Contact
                 </Link>
               </li>
