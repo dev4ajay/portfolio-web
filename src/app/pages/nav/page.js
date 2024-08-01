@@ -26,7 +26,7 @@ const Page = () => {
             </svg>
           </button>
           <div className={`${isOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`} id="navbar-default">
-            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-darks md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 text-white  ">
+            <ul className="font-medium flex gap-4 flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-darks md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 text-white  ">
               <li>
                 <Link href="/pages/about" className={`inline-flex rounded-full px-3 py-1.5 bg-orange-950 hover:text-blue-500 [&.active]:bg-sky-600 [&.active]:bg-sky-600 ${pathname === '/pages/about' ? 'active' : ''}`}>
                   About
