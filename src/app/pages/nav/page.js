@@ -1,11 +1,14 @@
-"use client"
+"use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation'
+import { usePathname } from 'next/navigation';
 
 const Page = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname()
+  const pathname = usePathname();
+
+  const handleToggle = () => setIsOpen(!isOpen);
+  const handleClose = () => setIsOpen(false);
 
   return (
     <div>
@@ -15,7 +18,7 @@ const Page = () => {
             {/* Add logo or brand name here */}
           </a>
           <button 
-            onClick={() => setIsOpen(!isOpen)} 
+            onClick={handleToggle}
             className="inline-flex items-center p-2 ml-3 mt-4 mb-2 text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-default"
             aria-expanded={isOpen}
@@ -25,26 +28,34 @@ const Page = () => {
               <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm1 4a1 1 0 000 2h12a1 1 0 100-2H4z" clipRule="evenodd"></path>
             </svg>
           </button>
-          <div className={`${isOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`} id="navbar-default">
-            <ul className="font-medium flex gap-4 flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-darks md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 text-white  ">
+          <div className={`w-full md:block md:w-auto ${isOpen ? 'block' : 'hidden'}`} id="navbar-default">
+            <ul className="font-medium flex gap-4 flex-col p-4 md:p-0 mt-4  rounded-lg bg-darks md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 text-white">
               <li>
-                <Link href="/pages/about" className={`inline-flex rounded-full px-3 py-1.5 bg-orange-950 hover:text-blue-500 [&.active]:bg-sky-600 [&.active]:bg-sky-600 ${pathname === '/pages/about' ? 'active' : ''}`}>
-                  About
+                <Link href="/pages/about"
+                 onClick={handleClose} className={`inline-flex rounded-full px-3 py-1.5 bg-orange-950 hover:text-blue-500 ${pathname === '/pages/about' ? 'bg-sky-600' : ''}`}>
+                    About
+                 
                 </Link>
               </li>
               <li>
-                <Link href="/pages/resume" className={`inline-flex rounded-full px-3 py-1.5 bg-orange-950 hover:text-blue-500 [&.active]:bg-sky-600 [&.active]:bg-sky-600 ${pathname === '/pages/resume' ? 'active' : ''}`}>
-                  Resume
+                <Link href="/pages/resume"
+                 onClick={handleClose} className={`inline-flex rounded-full px-3 py-1.5 bg-orange-950 hover:text-blue-500 ${pathname === '/pages/resume' ? 'bg-sky-600' : ''}`}>
+                    Resume
+                 
                 </Link>
               </li>
               <li>
-                <Link href="/pages/portfolio" className={`inline-flex rounded-full px-3 py-1.5 bg-orange-950 hover:text-blue-500 [&.active]:bg-sky-600 [&.active]:bg-sky-600 ${pathname === '/pages/portfolio' ? 'active' : ''}`}>
-                  Portfolio
+                <Link href="/pages/portfolio"
+                 onClick={handleClose} className={`inline-flex rounded-full px-3 py-1.5 bg-orange-950 hover:text-blue-500 ${pathname === '/pages/portfolio' ? 'bg-sky-600' : ''}`}>
+                    Portfolio
+                 
                 </Link>
               </li>
               <li>
-                <Link href="/pages/contact" className={`inline-flex rounded-full px-3 py-1.5 bg-orange-950 hover:text-blue-500 [&.active]:bg-sky-600 [&.active]:bg-sky-600 ${pathname === '/pages/contact' ? 'active' : ''}`}>
-                  Contact
+                <Link href="/pages/contact"
+                onClick={handleClose} className={`inline-flex rounded-full px-3 py-1.5 bg-orange-950 hover:text-blue-500 ${pathname === '/pages/contact' ? 'bg-sky-600' : ''}`}>
+                    Contact
+                 
                 </Link>
               </li>
             </ul>
@@ -53,6 +64,6 @@ const Page = () => {
       </nav>
     </div>
   );
-}
+};
 
 export default Page;
