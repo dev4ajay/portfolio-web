@@ -1,0 +1,108 @@
+.sidebar {
+  width: 352px;
+  background-color: #333;
+  color: #fff;
+  height: 100vh;
+  padding: 3rem;
+  position: fixed;
+  overflow-x:scroll !important;
+  height: 100vh !important;
+  }
+  
+  .avatar {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  
+  .avatar img{
+    background-color: hsl(240, 1%, 17%);
+    border-radius: 100%;
+    width: 100%;
+    height: 35vh;
+    /* height: 250px; */
+    /* margin: 1px 1px 1px 29px !important; */
+  }
+
+  
+ .nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav ul li {
+    margin: 1rem 0;
+  } 
+  
+  .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  } 
+  
+  .contactInfo {
+    margin-top: 2rem;
+  }
+
+  /* YourStyles.module.css */
+.sidebar {
+  /* Your existing styles */
+}
+
+.avatar {
+  /* Your existing styles */
+}
+
+.contactInfo {
+  /* Your existing styles */
+}
+
+.accordionToggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.accordionContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.accordionContent.open {
+  max-height: 1000px; /* Large value to ensure content fits */
+}
+
+  @media (max-width: 992px) {
+  
+    .avatar{
+      display: none !important;
+    }
+    .sidebar {
+   display: none !important;
+      }
+      
+    .avatar img{
+      display: none !important;
+    }
+    .contactInfo {
+      display: none !important;
+    }
+ 
+    
+  }
+  
+  @media (max-width: 270px) {
+    .avatar{
+      display: none !important;
+    }
+    .avatar img{
+      display: none !important;
+    }
+    .contactInfo {
+      display: none !important;
+    }
+    
+  }
+  

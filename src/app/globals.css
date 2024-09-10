@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #333!important;
+  color: white;
+}
+.font-bolds{
+  font-weight: bold !important;
+}
+a{
+  color: white !important;
+  font-weight: 600;
+}
+.title{
+  color: white !important;
+  background: hsl(240, 1%, 17%) !important;
+
+  text-align: center;
+  font-weight: 300 !important;
+  /* width: max-content !important; */
+  /* padding: 0px 33px !important; */
+ 
+  border-radius: 6px !important;
+}
+.article-title{
+  position: absolute;
+  top: 40px !important;
+  font-size: 30px !important;
+  font-weight: 900 !important;
+}
+.article-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background: goldenrod !important;
+  border-radius: 3px;
+}
+article.active {
+  display: block;
+  animation: fade 0.5s ease backwards;
+}
+.fonts{
+  font-size: 20px !important;
+  color: goldenrod !important;
+
+}
+.project-item img {
+  border-radius: 25px !important;
+}
+
+
+.main-block{
+  display: flex !important;
+  gap: 20px !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+}
+
+.icon-phone{
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+padding: 10px;
+border-radius: 10px;
+}
+p{
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.service-title{
+  font-size: 25px !important;
+  font-weight: 900 !important;
+}
+
+.service-item{
+  box-shadow: rgba(227, 194, 194, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 20px;
+  border-radius: 12px;
+}
+.border-radius{
+  border-radius: 30px !important;
+}
+.project-title{
+  margin-top: 10px !important;
+}
+.fs{
+  font-size: 45px !important;
+  color: goldenrod !important;
+  font-weight: 900 !important;
+}
+
+
+.project-img {
+  position: relative;
+}
+
+
+
+.project-img img:hover{
+  opacity: 0.4;
+}
+.timeline-item-title{
+  font-size:  16px !important;
+  font-weight: 700;
+}
+.record{
+  color: goldenrod !important;
+  font-weight: 700 !important;
+}
+.h3-head{
+  font-size: 25px !important;
+  font-weight: 700;
+    
+  };
+  .bg-darks{
+    background-color: #333 !important;
+
+  }
+
+
+  @media (max-width: 992px) {
+    p{
+    text-align: justify !important;
+    }
+    .main-block{
+      display: block !important;
+    }
+  
+    
+  }
